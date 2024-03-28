@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../imgs/background-index.jpg");
+    background-size: cover; 
+}
+
+.container{
+    height: 75%;
+    width: 60%;
+    border-radius: 15px;
+    background-color: #2E2F33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > #form,
+.container > #logo{
+    width: 50%;
+    height: 100%;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+form > a{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+form > a > img{
+    height: 25px;
+    width:25px;
+}
+form > .card{
+    height: 45px;
+    width: 70%;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+form > .card > img{
+    height:40px;
+    width:40px;
+}
+form >.card input{
+    height:100%;
+    width:80%;
+    margin-left: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(185, 185, 185, 0.7);
+}
+.container > #logo > img{
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+} 
+.Access{
+    height: 35px;
+    width: 45%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+}
+.Access > img{
+height: 35px;
+width:35px;
+}
+.Access > #Access{
+    border: none;
+    width: 60%;
+    font-size: 20px;
+    height: 100%;
+    background-color: aliceblue;
+}
