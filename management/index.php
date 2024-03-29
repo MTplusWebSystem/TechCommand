@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> TechCommand GER</title>
+    <title>TechCommand GER</title>
     <link rel="stylesheet" href="./css/styles/index.css">
 </head>
 <body>
     <main class='container'>
         <section id="form">
-            <form action="">
+            <form action="./core-php/validate.php" method="post" onsubmit="return showPopup()">
                 <div class="card">
                     <img src="./css/imgs/icons/user.svg" alt="key">
-                    <input type="text">
+                    <input type="text" name="username">
                 </div>
                 <div class="card">
                     <img src="./css/imgs/icons/key.svg" alt="key">
-                    <input type="password">
+                    <input type="password" name="password">
                 </div>
                 <div class="Access">
                     <img src="./css/imgs/icons/line-style.svg" alt="linhas estilizadas">
