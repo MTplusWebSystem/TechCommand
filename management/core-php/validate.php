@@ -25,7 +25,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $result = $statement->fetch(PDO::FETCH_ASSOC);
             if ($result) {
-                echo "Login bem-sucedido!";
+                switch ($result['level_id']){
+                    case 1:
+                        echo "<script>window.location.href = 'http://localhost:7070/attendant.php';</script>";
+                    case 2:
+                        echo "<script>window.location.href = 'http://localhost:7070/manager.php';</script>";
+                    case 3:
+                        echo "<script>window.location.href = 'http://localhost:7070/administrator.php';</script>";
+                }
             } else {
                 sendMSG("http://localhost:7070/index.php", "Usuário ou senha incorretos.");
             }            
