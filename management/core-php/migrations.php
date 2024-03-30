@@ -31,9 +31,14 @@ try {
 
     $sql = "INSERT INTO adminCategories (username, password, level_id) VALUES (:username, :password, :level_id)";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(['username' => "mtplus", 'password' => "Meez4m11@", 'level_id' => 3]);
+    $stmt->execute(['username' => "mtplus3", 'password' => "Meez4m11@", 'level_id' => 3]);
+    $stmt->execute(['username' => "mtplus2", 'password' => "Meez4m11@", 'level_id' => 2]);
+    $stmt->execute(['username' => "mtplus1", 'password' => "Meez4m11@", 'level_id' => 1]);
 
-    echo "Dados inseridos com sucesso...";
+    echo "Dados inseridos com sucesso...
+    \nUsuário:mtplus1 | senha:Meez4m11@ > nível Atendente\n
+    \nUsuário:mtplus2 | senha:Meez4m11@ > nível Gerente\n
+    \nUsuário:mtplus3 | senha:Meez4m11@ > nível Administrador\n";
 } catch (PDOException $e) {
     echo "Erro ao inserir dados: " . $e->getMessage();
 }
