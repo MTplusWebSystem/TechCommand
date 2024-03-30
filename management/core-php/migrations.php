@@ -1,8 +1,13 @@
 <?php
 require_once 'connection.php';
 
-try {
+function CreateUSERS($pdo, $username, $password, $level_id){
+    $sql = "INSERT INTO adminCategories (username, password, level_id) VALUES (:username, :password, :level_id)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['username' => $username, 'password' => $password, 'level_id' => $level_id]);
+}
 
+try {
     $levels = "
     CREATE TABLE IF NOT EXISTS levels (
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -28,13 +33,10 @@ try {
     )";
     $pdo->exec($adminCategories);
 
-
-    $sql = "INSERT INTO adminCategories (username, password, level_id) VALUES (:username, :password, :level_id)";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(['username' => "mtplus3", 'password' => "Meez4m11@", 'level_id' => 3]);
-    $stmt->execute(['username' => "mtplus2", 'password' => "Meez4m11@", 'level_id' => 2]);
-    $stmt->execute(['username' => "mtplus1", 'password' => "Meez4m11@", 'level_id' => 1]);
-
+    CreateUSERS($pdo, "mtplus1", "Meez4m11@", 1);
+    CreateUSERS($pdo, "mtplus2", "Meez4m11@", 2);
+    CreateUSERS($pdo, "mtplus3", "Meez4m11@", 3);
+    
     echo "Dados inseridos com sucesso...
     \nUsuário:mtplus1 | senha:Meez4m11@ > nível Atendente\n
     \nUsuário:mtplus2 | senha:Meez4m11@ > nível Gerente\n
