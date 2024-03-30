@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCommand</title>
+    <link rel="stylesheet" href="./pages/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./pages/js/AJAX.js"></script>
+</head>
+<body>
+   <nav id="nav-bar">
+        <div id="logo-name"></div>
+        <div class="actions-menu">
+            <div class="mode"></div>
+            <button class="active-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+        </div>
+   </nav>
+</body>
+<script>
+
+    $(document).ready(function() {
+        Load_Data();
+    });
+    function Click_Active_Menu() {
+        console.log("click");
+        const bar1 = document.getElementsByClassName("bar1")[0];
+        const bar2 = document.getElementsByClassName("bar2")[0];
+        bar1.style.transform = "rotate(55deg)";
+        bar1.style.position = "absolute";
+        bar2.style.transform = "rotate(-55deg)";
+        bar2.style.position = "absolute";
+        const rm_bar = document.getElementsByClassName("bar3")[0];
+        rm_bar.style.display = "none";
+    }
+  
+  
+$(".active-menu").on("click", Click_Active_Menu);
+</script>
+</html>
