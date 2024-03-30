@@ -37,8 +37,19 @@
             </ul>
         </nav>
         <section id="index">
-
-        </section>
+            <div class="card-status">
+                <div class="card-users">
+                    <img src="./css/imgs/icons/users.svg" alt="icone de informações">
+                </div>
+                <div class="card-tickets">
+                    <img src="./css/imgs/icons/tickets.svg" alt="icone de informações">
+                </div>
+                <div class="card-onlines">
+                    <img src="./css/imgs/icons/exit.svg" alt="icone de informações">
+                </div>
+            </div>
+        </secion>
     </main>
+
 </body>
 </html>

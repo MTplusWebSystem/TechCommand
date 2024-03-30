@@ -17,6 +17,14 @@ body {
 #container{
     height:100%;
     width:100%;
+    display: flex;
+}
+#index{
+    height:100%;
+    width:85%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
 }
 .nav-bar{
     height:100%;
@@ -63,4 +71,30 @@ body {
     color: #FD413C;
     font-style: normal;
     font-size:24px;
+}
+.card-status{
+    height:45%;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-status > .card-users,
+.card-tickets, .card-onlines{
+    position: relative;
+    height: 95%;
+    width:30%;
+    border-radius: 15px;
+    background-color: #2B2F33;
+    overflow: hidden;
+}
+
+.card-status > .card-users > img,
+.card-status > .card-tickets > img,
+.card-status > .card-onlines > img{
+    height:35px;
+    width:35px;
+    position: absolute;
+    top:10px;
+    left:87%;
 }
