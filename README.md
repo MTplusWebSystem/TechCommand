@@ -15,15 +15,16 @@
 
 ### Banco de Dados :game_die:
 Fica em `.conf` dentro da pasta `management/core-php`
+### Exemplo 
+`usuário|senha|host|nome_do_banco`
 
 ### Migrações do Banco de Dados :gear:
 ```
 cd management/core-php/
 php migrations.php
-
 ```
 
-### Testar Início :test_tube:
+### Testar Início :microscope:
 ```
 cd management/
 php -S localhost:707
