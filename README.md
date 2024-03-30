@@ -24,7 +24,7 @@ cd management/core-php/
 php migrations.php
 ```
 
-### Testar Início :microscope:
+### Testar Início :test_tube:
 ```
 cd management/
 php -S localhost:707
