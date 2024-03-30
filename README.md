@@ -18,7 +18,9 @@ Fica em `.conf` dentro da pasta `management/core-php`
 
 ### Migrações do Banco de Dados :gear:
 ```
-php management/core-php/migrations
+cd management/core-php/
+php migrations.php
+
 ```
 
 ### Testar Início :test_tube:
