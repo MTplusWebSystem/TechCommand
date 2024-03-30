@@ -15,7 +15,7 @@
 
 ### Banco de Dados :game_die:
 Fica em `.conf` dentro da pasta `management/core-php`
-### Exemplo 
+### Exemplo :microscope:
 `usuário|senha|host|nome_do_banco`
 
 ### Migrações do Banco de Dados :gear:
