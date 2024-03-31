@@ -18,27 +18,90 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
+            <ul>
+                <li>
+                    <a href="#">Início</a>
+                </li>
+                <li>
+                    <a href="#">Teste SSH</a>
+                </li>
+                <li>
+                    <a href="#">SSH Premium</a>
+                </li>
+                <li>
+                    <a href="#">Revenda</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
         </div>
    </nav>
+   <main class="container">
+        <!--Sobre apresentaç~ao-->
+        <section id="presentation">
+            <div class="presentation-card">
+                <div class="presentation-title">
+                    <h2 class="title-1">
+                        Seu painel open-suorce
+                    </h2>
+                    <h2 class="title-2">
+                        para gerencia SSH
+                    </h2>
+                </div>
+                <div class="presentation-text">
+                    <p>Selecione abaixo o tipo de conta que deseja criar, clique em ssh premium, caso queira suporte e até 31 dias de acesso </p>
+                    <div class="presentation-button">
+                        <a class="premium">Premium</a> 
+                        <a class="free">Grátis</a>
+                    </div>
+                </div>
+            </div>
+            <img src="./pages/css/Illustrations/professionel-developer.svg" alt="Ilustração 1">
+        </section>
+        <!--Sobre revenda-->
+        <section id="about-resale">
+
+        </section>
+        <!--Sobre revenda-->
+        <section id="about-resale">
+
+        </section>
+        <!--Descrição do aplicativo-->
+        <section id="app-description">
+
+        </section>
+         <!--Lista de planos-->
+         <section id="plan-list">
+
+         </section>
+          <!--Descrição sobre ssh-->
+        <section id="ssh-description">
+
+        </section>
+         <!--Vantagens do serviço-->
+         <section id="advantages-service">
+
+        </section>
+        <!--Vantagens do serviço-->
+        <section id="advantages-service">
+
+        </section>
+         <!--Outros serviço-->
+         <section id="other-services">
+
+         </section>
+   </main>
+   <footer>
+
+   </footer>
 </body>
 <script>
 
     $(document).ready(function() {
         Load_Data();
     });
-    function Click_Active_Menu() {
-        console.log("click");
-        const bar1 = document.getElementsByClassName("bar1")[0];
-        const bar2 = document.getElementsByClassName("bar2")[0];
-        bar1.style.transform = "rotate(55deg)";
-        bar1.style.position = "absolute";
-        bar2.style.transform = "rotate(-55deg)";
-        bar2.style.position = "absolute";
-        const rm_bar = document.getElementsByClassName("bar3")[0];
-        rm_bar.style.display = "none";
-    }
-  
-  
-$(".active-menu").on("click", Click_Active_Menu);
+    
+    $(".active-menu").on("click", Click_Active_Menu);
 </script>
 </html>

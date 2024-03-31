@@ -11,6 +11,30 @@ body{
     position: relative;
     overflow: hidden;
 }
+@media (min-width: 420px) and (max-width: 1023px) {
+    #logo-name{
+        width:90%;
+        padding: 0px 0px 0px 10px;
+    }
+    .actions-menu > ul,li,a{
+        display: none;
+    }
+    .actions-menu > button, .mode{
+        width:60px;
+    }
+}
+@media (min-width: 1024px){
+    .actions-menu{
+        width:70%;
+    }
+    .actions-menu > button{
+        display: none;
+    }
+    #logo-name{
+        width: 30%;
+        padding: 0px 0px 0px 10px
+    }
+}
 #nav-bar{
     height: 40px;
     width: 100%;
@@ -21,14 +45,12 @@ body{
     top: 0px;
 }
 #logo-name{
-    width: 90%;
     font-family: "Kanit", sans-serif;
     font-size: 25px;
     font-style: normal;
 }
 .actions-menu{
     height:100%;
-    width:95px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,10 +69,103 @@ body{
     border-radius: 3px;
     border: none;
 }
+.actions-menu > ul{
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.actions-menu > ul > li,a {
+    color: #525252;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-style: normal;
+}
 .active-menu > .bar1,.bar2,.bar3{
     width:70%;
     height:2px;
     display: flex;
     background-color: #ffffff;
     border-radius:2px;
+}
+.container {
+    height: calc(100% - 40px);
+    width: 100%;
+    top: 40px;
+    position: fixed;
+    overflow: auto; 
+    background-color: #525252;
+}
+
+#about-resale,#advantages-service,
+#app-description,#other-services,
+#plan-list,#presentation,#ssh-description{
+    position: relative;
+    height:100%;
+    width:100%;
+}
+#presentation{
+    background-color:rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#presentation > .presentation-card{
+    height: 100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#presentation > .presentation-card > .presentation-title{
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    padding: 0px 0px 0px 15px;
+}
+#presentation > .presentation-card > .presentation-title > .title-1,.title-2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    text-decoration: none;
+    font-style: normal;
+}
+#presentation > .presentation-card > .presentation-title > .title-2{
+    color: #0084ff;
+}
+#presentation > .presentation-card > .presentation-text{
+    height: 40%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 15px;
+}
+#presentation > .presentation-card > .presentation-text > p{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#presentation > .presentation-card > .presentation-text> .presentation-button{
+    height: 45px;
+    width:85%;
+    display: flex;
+    justify-content: space-around;
+}
+#presentation > .presentation-card > .presentation-text> .presentation-button > a{
+    height: 45px;
+    width:130px;
+    color: #ffffff;
+    background-color: #0084ff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 15px;
+}
+#presentation > .presentation-card > .presentation-text> .presentation-button > .premium{
+    background-color: #59A053;
+}
+#presentation > .presentation-card > .presentation-text> .presentation-button > .free{
+    background-color: #FEBC2C;
 }
