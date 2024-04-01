@@ -164,8 +164,179 @@ body{
     border-radius: 15px;
 }
 #presentation > .presentation-card > .presentation-text> .presentation-button > .premium{
-    background-color: #59A053;
+    background-color: #0084ff;
 }
 #presentation > .presentation-card > .presentation-text> .presentation-button > .free{
     background-color: #FEBC2C;
+}
+#about-resale {
+    height:100%;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about-resale >.card-about-resale{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10% 0px 10%;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+.about-resale-logo{
+    color: #0084ff;
+}
+#about-resale >.card-about-resale > a{
+    width:17%;
+    height:45px;
+    color: #ffffff;
+    background-color: #FD413C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 25px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#about-resale >.card-about-resale > h6{
+    color: #525252;
+    font-size: 25px;
+}
+#app-description{
+    background-color: #082b75;
+    color: #ffffff;
+}
+#app-description > .card-app-description {
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0px 10% 0px 10%;
+}
+#app-description > .card-app-description >.title-app-description {
+    font-size: 25px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#app-description > .card-app-description > h2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#plan-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 255, 252);
+}
+#plan-list > .card-container{
+    height:100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#plan-list > .card-container > h3{
+    font-size: 25px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#plan-list > .card-container > .card-main{
+    height:90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#plan-list > .card-container > .card-main > .plans{
+    position: relative;
+    top: 10px;
+    height: 90%;
+    width:33%;
+    border-radius: 7px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-top,.card-plan-and {
+    display: flex;
+    height: 55%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-top{
+    height:30%;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-top > .description{
+    color: #525252;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#plan-list > .card-container > .card-main > .plans > h6,
+#plan-list > .card-container > .card-main > .plans > .card-plan-top > h6 {
+    color: #0fe688;
+    text-align: center;
+    font-size: 25px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-and > ul{
+    list-style: none;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 17px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-and > a{
+    height: 35px;
+    width: 45%;
+    color: #ffffff;
+    background-color: #1fc47c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+#plan-list > .card-container > .card-main > .plans > .card-plan-top > h4{
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    width: 60%;
+}
+#cifrão{
+    position: relative;
+    top: -20px;
+    font-size: 25px;
+}
+#valor{
+    position: relative;
+    font-size: 45px;
+}
+
+#plan-list > .card-container > .card-main > #plan2{
+    position: relative;
+    height:95%;
+    z-index: 44;
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
 }
