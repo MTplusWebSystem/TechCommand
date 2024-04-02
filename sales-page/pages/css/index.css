@@ -222,6 +222,8 @@ body{
     padding: 0px 10% 0px 10%;
 }
 #app-description > .card-app-description >.title-app-description {
+    text-align: center;
+    color: #ffffff;
     font-size: 25px;
     line-height: 28px;
     font-family: 'Nunito', sans-serif;
@@ -339,4 +341,102 @@ body{
     -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+#ssh-description{
+    height: 170%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 0px 0px 6%;
+}
+#ssh-description > #illustration{
+    position: absolute;
+    top:25%;
+    left: 56%;
+}
+#ssh-description > h3 , h6 , p {
+    width:65%;
+    font-family: 'Nunito', sans-serif;
+}
+#ssh-description > p, h6{
+    color: #525252;
+}
+#ssh-description > h6{
+    font-size: 15px;
+}
+#ssh-description > h3{
+    font-size: 25px;
+}
+
+#ssh-description >.types-description-ssh{
+    height: 95px;
+    width:65%;
+    position: relative;
+    display: flex;
+}
+#ssh-description >.types-description-ssh > img{
+    height:60px;
+    width:60px;
+    position: absolute;
+    top: -10%;
+    left: -5%;
+}
+#ssh-description >.types-description-ssh > .types-ssh{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    text-align: left;
+    padding: 0px 0px 0px 30px;
+    font-family: 'Nunito', sans-serif;
+}
+#ssh-description >.types-description-ssh > .types-ssh >p{
+    font-size: 15px;
+    margin-top:8px;
+}
+
+#advantages-service {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    justify-content: space-evenly;
+}
+#advantages-service > .items-grup{
+    height: 80%;
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#advantages-service > .items-grup > .items-column{
+    height: 100%;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#advantages-service > .items-grup > .items-column > .items-view{
+    height:48%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#advantages-service > .items-grup > .items-column > .items-view > img{
+    height:90px;
+    width: 90px;
+}
+#advantages-service > .items-grup > .items-column > .items-view > p{
+    font-size: 17px;
+    width: 90%;
 }
