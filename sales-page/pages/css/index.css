@@ -35,6 +35,7 @@ body{
         padding: 0px 0px 0px 10px
     }
 }
+
 #nav-bar{
     height: 40px;
     width: 100%;
@@ -100,7 +101,7 @@ body{
 
 #about-resale,#advantages-service,
 #app-description,#other-services,
-#plan-list,#presentation,#ssh-description{
+#plan-list,#presentation,#ssh-description,#footer{
     position: relative;
     height:100%;
     width:100%;
@@ -170,6 +171,7 @@ body{
     background-color: #FEBC2C;
 }
 #about-resale {
+    text-align: center;
     height:100%;
     background-color: #ffffff;
     display:flex;
@@ -439,4 +441,58 @@ body{
 #advantages-service > .items-grup > .items-column > .items-view > p{
     font-size: 17px;
     width: 90%;
+}
+#other-services{
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#other-services > h3,h6{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#other-services > .card-container > .card-services> h5 > img{
+    margin-left: -25px;
+    height:60px;
+    width:60px;
+}
+#other-services > .card-container > .card-services> h5 {
+    width: 75%;
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#other-services > .card-container{
+    width:95%;
+    height:65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#other-services > .card-container > .card-services{
+    width:50%;
+    height: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px #0fe688;
+}
+
+#other-services > .card-container > .card-services > p{
+    font-size: 18px;
+}
+#footer{
+    height: 75px;
+    width:100%;
+    display: flex;
+    background-color: #242424;
 }
