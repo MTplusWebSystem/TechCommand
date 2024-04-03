@@ -99,6 +99,16 @@ body{
     background-color: #525252;
 }
 
+#contato{
+    z-index: 55;
+    position: fixed;
+    top:90%;
+    left:93%;
+}
+#contato > img{
+    height:60px;
+    width:60px;
+}
 #about-resale,#advantages-service,
 #app-description,#other-services,
 #plan-list,#presentation,#ssh-description,#footer{
@@ -491,8 +501,32 @@ body{
     font-size: 18px;
 }
 #footer{
-    height: 75px;
+    height: 65px;
     width:100%;
     display: flex;
-    background-color: #242424;
+    background-color: #121212;
+}
+#footer > .author > a,
+#footer > .Additional-Information > a{
+    color: #0084ff;
+}
+#footer > .author{
+    width: 54%;
+    height:100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+#footer > .Additional-Information{
+    width:46%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 60px 0px 0px;
 }

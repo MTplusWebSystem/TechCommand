@@ -34,10 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         echo "<script>window.location.href = 'http://localhost:7070/administrator.php';</script>";
                 }
             } else {
-                sendMSG("http://localhost:7070/index.php", "Usuário ou senha incorretos.");
+                sendMSG("http://localhost:7070/index.html", "Usuário ou senha incorretos.");
             }            
         } else {
-            sendMSG("http://localhost:7070/index.php","Por favor, preencha todos os campos.");
+            sendMSG("http://localhost:7070/index.html","Por favor, preencha todos os campos.");
         }
     } catch (PDOException $e) {
         echo "Erro de conexão: " . $e->getMessage();
