@@ -14,13 +14,6 @@ body {
     background-size: cover; 
     font-family: 'Nunito', sans-serif !important;
 }
-h6{
-    color: #eeb58a;
-    font-size: 18px;
-}
-h4{
-    color: #ffffff;
-}
 .container{
     position: relative;
     height:60%;
@@ -30,51 +23,10 @@ h4{
     align-items: center;
     overflow: hidden;
 }
-.container > .access-options{
-    position: absolute;
-    height:100%;
-    width:100%;
-    left:0%;
-    background-color:#2e3137;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    backdrop-filter: blur(2px);
-    border-radius: 15px;
-}
-
-.container > .access-options > .options{
-    height:150px;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} 
-.container > .access-options > .options > button{
-    height: 125px;
-    width: 125px;
-    color: #ffffff;
-    background-color: #545d6a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius:15px;
-    border: none;
-    font-family: 'Nunito', sans-serif !important;
-    font-size: 15px;
-}
-
-.container > .access-options > .options > button > img{
-    height: 60px;
-    width: 60px;
-}
 
 .container > .forms{
     position: absolute;
     height:100%;
-    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;

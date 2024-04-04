@@ -28,21 +28,38 @@
                 <li>
                     <a href="#plan-list">SSH Premium</a>
                 </li>
-                <li>
-                    <a href="#about-resale">Revenda</a>
+                <li id="click-view-services">
+                    <a href="#">Serviços <img src="./pages/css/icones/arrow-dwon.svg" alt="icone de seta parar baixo"></a>
                 </li>
-                <li>
-                    <a href="#other-services">Serviços</a>
-                </li>
-                <li>
-                    <a href="http://localhost:7070">Conecte-se</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
+                <li id="login">
+                    <a href="http://localhost:7070/client">Entrar</a>
                 </li>
             </ul>
         </div>
    </nav>
+   <div class="add-services-a">
+        <ul>
+            <li id="back">
+                <img src="./pages/css/icones/arroe-up.svg" alt="icone de seta para cima">
+            </li>
+            <li>
+                <img src="./pages/css/icones/distributor.svg" alt="icone de grupo de vendas">
+                <a href="#">Revenda</a>
+            </li>
+            <li>
+                <img src="./pages/css/icones/ticket.svg" alt="icone de ticket">
+                <a href="#">Tickets abertos</a>
+            </li>
+            <li>
+                <img src="./pages/css/icones/support.svg" alt="icone de suporte">
+                <a href="#">Suporte</a>
+            </li>
+            <li>
+                <img src="./pages/css/icones/complaint.svg" alt="icone de reclamação">
+                <a href="">Reclamação</a>
+            </li>
+        </ul>
+   </div>
    <main class="container">
     <a href="#" id="contato"><img src="./pages/css/icones/whatisapp.svg" alt="icone de whatisapp"></a>
         <!--Sobre apresentaç~ao-->
@@ -265,5 +282,13 @@
     });
     
     $(".active-menu").on("click", Click_Active_Menu);
+    $("#click-view-services").on("click", () => {
+        const view_services = document.querySelector(".add-services-a")
+        view_services.style.display = "flex"
+    });
+    $("#back").on("click", () => {
+        const view_services = document.querySelector(".add-services-a")
+        view_services.style.display = "none"
+    });
 </script>
 </html>
