@@ -1,183 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    height:100vh;
-    width:100vw;
-    position: relative;
-    overflow: hidden;
-}
-@media (min-width: 420px) and (max-width: 1023px) {
-    #logo-name{
-        width:90%;
-        padding: 0px 0px 0px 10px;
-    }
-    .actions-menu > ul,li,a{
-        display: none;
-    }
-    .actions-menu > button, .mode{
-        width:60px;
-    }
-}
-@media (min-width: 1024px){
-    .actions-menu{
-        width:70%;
-    }
-    .actions-menu > button{
-        display: none;
-    }
-    #logo-name{
-        width: 30%;
-        padding: 0px 0px 0px 10px
-    }
-}
-
-#nav-bar{
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-}
-#logo-name{
-    font-family: "Kanit", sans-serif;
-    font-size: 25px;
-    font-style: normal;
-}
-.actions-menu{
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.active-menu,.mode{
-    height: 35px;
-    width:  35px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.active-menu{
-    background-color: black;
-    border-radius: 3px;
-    border: none;
-}
-.actions-menu > ul{
-    width:80%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-.actions-menu > ul > li,a {
-    color: #525252;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Kanit", sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    font-style: normal;
-}
-.actions-menu > ul > li>a> img {
-    height:28px;
-}
-
-.actions-menu > ul #login{
-    height: 35px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px;
-    border-radius: 6px;
-    border-color: #000000;
-}
-
-.add-services-a{
-    z-index: 55;
-    display: none;
-    height: 100%;
-    width:100%;
-    left: 0%;
-    top: 0px;
-    position: fixed;
-    background-color: rgba(0,0,0,0.45);
-
-}
-.add-services-a >ul{
-    z-index: 70;
-    height: 65%;
-    width:250px;
-    left: 73%;
-    top: 45px;
-    background-color: #ffffff;
-    position: fixed;
-    border-radius: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.add-services-a >ul > li{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.add-services-a > ul > #back{
-    position: absolute;
-    height: 35px;
-    width: 100%;
-    top: 0;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px 9px 0px 0px;
-}
-.add-services-a >ul > li>img{
-    height: 45px;
-    width: 45px;
-}
-.add-services-a >ul > li>a{
-    height: 55px;
-    width: 70%;
-    color: #000000;
-}
-.active-menu > .bar1,.bar2,.bar3{
-    width:70%;
-    height:2px;
-    display: flex;
-    background-color: #ffffff;
-    border-radius:2px;
-}
+@import url("./colors.css");
 .container {
-    height: calc(100% - 40px);
+    height: 100%;
     width: 100%;
     top: 40px;
     position: fixed;
     overflow: auto; 
-    background-color: #525252;
+    background-color: var(--color-whitefff);
 }
 
-#contato{
-    z-index: 55;
-    position: fixed;
-    top:90%;
-    left:93%;
-}
-#contato > img{
-    height:60px;
-    width:60px;
-}
 #about-resale,#advantages-service,
 #app-description,#other-services,
 #plan-list,#presentation,#ssh-description,#footer{
@@ -192,8 +22,6 @@ body{
     align-items: center;
 }
 #presentation > .presentation-card{
-    height: 100%;
-    width:50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -201,12 +29,11 @@ body{
 #presentation > .presentation-card > .presentation-title{
     position: absolute;
     top: 5%;
-    width: 50%;
     padding: 0px 0px 0px 15px;
 }
 #presentation > .presentation-card > .presentation-title > .title-1,.title-2{
     font-family: 'Nunito', sans-serif;
-    font-size: 45px;
+    font-size: 25px;
     text-decoration: none;
     font-style: normal;
 }
@@ -215,7 +42,7 @@ body{
 }
 #presentation > .presentation-card > .presentation-text{
     height: 40%;
-    width: 70%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -297,9 +124,9 @@ body{
     height:100%;
     width:100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
     padding: 0px 10% 0px 10%;
 }
 #app-description > .card-app-description >.title-app-description {
@@ -317,6 +144,7 @@ body{
 }
 #plan-list{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 255, 252);
@@ -595,7 +423,21 @@ body{
     width:46%;
     height: 100%;
     display: flex;
+    background-color: white;
     justify-content: space-evenly;
     align-items: center;
     padding: 0px 60px 0px 0px;
+}
+
+#contato{
+    top:90%;
+    left:70%;
+    z-index: 55;
+    position: fixed;
+    top:90%;
+    left:93%;
+}
+#contato > img{
+    height:60px;
+    width:60px;
 }

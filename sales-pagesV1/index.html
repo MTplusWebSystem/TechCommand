@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechCommand</title>
-    <link rel="stylesheet" href="./pages/css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./pages/js/AJAX.js"></script>
+    <link rel="stylesheet" href="./src/css/index/root.css">
 </head>
 <body>
-   <nav id="nav-bar">
-        <div id="logo-name"></div>
-        <div class="actions-menu">
-            <div class="mode"></div>
-            <button class="active-menu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+    <div id="nav-bar">
+        <div class="logo"><h2><strong id="logo">TechCommand</strong></h2></div>
+        <div id="menu" class="menu-style">
+            <div id="login-mobile">
+                <a href="http://localhost:7070/client">Entrar</a>
+            </div>
+            <button id="view-menu">
+                <div id="bar1" class="stylebar"></div>
+                <div id="bar2" class="stylebar"></div>
+                <div id="bar3" class="stylebar"></div>
             </button>
-            <ul>
+            <ul id="menu-list" class="style-menu-list">
                 <li>
                     <a href="#presentation">Início</a>
                 </li>
@@ -28,40 +28,40 @@
                 <li>
                     <a href="#plan-list">SSH Premium</a>
                 </li>
-                <li id="click-view-services">
-                    <a href="#">Serviços <img src="./pages/css/icones/arrow-dwon.svg" alt="icone de seta parar baixo"></a>
+                <li id="view-services">
+                    <a href="#">Serviços <img src="./src/icons/arrow-dwon.svg" alt="icone de seta parar baixo" id="icon-size"></a>
                 </li>
-                <li id="login">
+                <li id="login-desktop">
                     <a href="http://localhost:7070/client">Entrar</a>
                 </li>
             </ul>
         </div>
-   </nav>
-   <div class="add-services-a">
+    </div>
+    <div class="add-services-a">
         <ul>
             <li id="back">
-                <img src="./pages/css/icones/arroe-up.svg" alt="icone de seta para cima">
+                <img src="./src/icons/arrow-up.svg" alt="icone de seta para cima">
             </li>
             <li>
-                <img src="./pages/css/icones/distributor.svg" alt="icone de grupo de vendas">
+                <img src="./src/icons/distributor.svg" alt="icone de grupo de vendas">
                 <a href="#">Revenda</a>
             </li>
             <li>
-                <img src="./pages/css/icones/ticket.svg" alt="icone de ticket">
+                <img src="./src/icons/ticket.svg" alt="icone de ticket">
                 <a href="#">Tickets abertos</a>
             </li>
             <li>
-                <img src="./pages/css/icones/support.svg" alt="icone de suporte">
+                <img src="./src/icons/support.svg" alt="icone de suporte">
                 <a href="#">Suporte</a>
             </li>
             <li>
-                <img src="./pages/css/icones/complaint.svg" alt="icone de reclamação">
+                <img src="./src/icons/complaint.svg" alt="icone de reclamação">
                 <a href="">Reclamação</a>
             </li>
         </ul>
    </div>
    <main class="container">
-    <a href="#" id="contato"><img src="./pages/css/icones/whatisapp.svg" alt="icone de whatisapp"></a>
+    <a href="#" id="contato"><img src="./src/icons/whatisapp.svg" alt="icone de whatisapp"></a>
         <!--Sobre apresentaç~ao-->
         <section id="presentation">
             <div class="presentation-card">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <img src="./pages/css/Illustrations/professionel-developer.svg" alt="Ilustração 1">
+            <img src="./src/illustrations/professionel-developer.svg" alt="Ilustração 1">
         </section>
         <!--Sobre revenda-->
         <section id="about-resale">
@@ -174,30 +174,30 @@
                 Contornar restrições de rede: Em ambientes onde há restrições de rede, como em redes corporativas ou em países com censura, um proxy SSH pode ser usado para contornar essas restrições, roteando o tráfego através de uma conexão SSH para acessar recursos externos.
                 Proteção contra interceptação de dados: Como o tráfego é criptografado quando passa pelo túnel SSH, ele oferece uma camada adicional de segurança contra a interceptação de dados por terceiros.
                 Existem diferentes tipos de proxy SSH, incluindo</p>
-            <img id="illustration" src="./pages/css/Illustrations/data-protection.svg" alt="Ilustração de um Servidor protegido">
+            <img id="illustration" src="./src/illustrations/data-protection.svg" alt="Ilustração de um Servidor protegido">
             <div class="types-description-ssh">
-                <img src="./pages/css/icones/wireless.svg" alt="icone de servidores">
+                <img src="./src/icons/wireless.svg" alt="icone de servidores">
                 <div class="types-ssh">
                     <h4>Proxy Socks</h4>
                     <p>Existem duas versões principais do protocolo SOCKS em uso: SOCKS4 e SOCKS5. O SOCKS5 é mais avançado e oferece recursos adicionais, como autenticação de usuário, suporte a IPv6 e criptografia de dados. Por outro lado, o SOCKS4 é mais simples e não oferece suporte a autenticação de usuário.</p>
                 </div>
             </div>
             <div class="types-description-ssh">
-                <img src="./pages/css/icones/wireless.svg" alt="icone de servidores">
+                <img src="./src/icons/wireless.svg" alt="icone de servidores">
                 <div class="types-ssh">
                     <h4>Proxy Squid</h4>
                     <p>O Squid é altamente configurável e pode ser personalizado para atender às necessidades específicas de uma organização. Ele é compatível com uma variedade de sistemas operacionais, incluindo Linux, BSD e Windows, e é amplamente utilizado em uma variedade de ambientes de rede para melhorar o desempenho, segurança e controle do acesso à internet.</p>
                 </div>
             </div>
             <div class="types-description-ssh">
-                <img src="./pages/css/icones/wireless.svg" alt="icone de servidores">
+                <img src="./src/icons/wireless.svg" alt="icone de servidores">
                 <div class="types-ssh">
                     <h4>Proxy V2Ray</h4>
                     <p> V2Ray utiliza um protocolo próprio chamado VMess (Versatile Message Transport), que é projetado para ser seguro e eficiente. Além disso, suporta outros protocolos como Shadowsocks, SOCKS, HTTP, entre outros.</p>
                 </div>
             </div>
             <div class="types-description-ssh">
-                <img src="./pages/css/icones/wireless.svg" alt="icone de servidores">
+                <img src="./src/icons/wireless.svg" alt="icone de servidores">
                 <div class="types-ssh">
                     <h4>Proxy OpenVPN</h4>
                     <p>OpenVPN é uma solução de código aberto amplamente utilizada para criação de redes privadas virtuais (VPNs). Ele permite criar conexões seguras entre dispositivos em uma rede pública, como a Internet, garantindo que os dados transmitidos estejam protegidos contra interceptação e violação de privacidade.</p>
@@ -211,36 +211,36 @@
             <div class="items-grup">
                 <div class="items-column">
                     <div class="items-view">
-                        <img src="./pages/css/icones/game-boot.svg" alt="">
+                        <img src="./src/icons/game-boot.svg" alt="">
                         <h4>Ping baixo</h4>
                         <p>Ideal para jogos online, streaming e outros serviços que necessitam de uma boa latência.</p>
                     </div>
                     <div class="items-view">
-                        <img src="./pages/css/icones/clapper.svg" alt="">
+                        <img src="./src/icons/clapper.svg" alt="">
                         <h4>Ideal para Filmes e Séries</h4>
                         <p>Com nossa conexão privada, você pode acessar uma ampla variedade de filmes e séries de origens diversas com total tranquilidade, sabendo que sua segurança está em primeiro lugar.</p>       
                     </div>
                 </div>
                 <div class="items-column">
                     <div class="items-view">
-                        <img src="./pages/css/icones/security.svg" alt="">
+                        <img src="./src/icons/security.svg" alt="">
                         <h4>Mascarmento de IP</h4>
                         <p>Os nossos servidores proxy camuflam seu ip real e aplicam uma leve camada de criptografia para que você possa acessar a internet com mais segurança e liberdade. </p>
                     </div>
                     <div class="items-view">
-                        <img src="./pages/css/icones/innovation.svg" alt="">
+                        <img src="./src/icons/innovation.svg" alt="">
                         <h4>Chamadas voip</h4>
                         <p>Utilizamos o sistema UDP em nossos servidores para possibilitar chamadas de vídeo e de voz online em aplicativos como whatsapp, facebook, telegram, dentre outros. </p>
                     </div>
                 </div>
                 <div class="items-column">
                     <div class="items-view">
-                        <img src="./pages/css/icones/speed.svg" alt="">
+                        <img src="./src/icons/speed.svg" alt="">
                         <h4>Alta velociddade</h4>
                         <p>Utilizamos sempre bons servidores de preferência cloud ou dedicado para garantir uma melhor experiência para os nossos clientes </p>
                     </div>
                     <div class="items-view">
-                        <img src="./pages/css/icones/chat.svg" alt="">
+                        <img src="./src/icons/chat.svg" alt="">
                         <h4>Suporte ao cliente</h4>
                         <p>Damos suporte diário de segunda a sábado aos nossos clientes, caso precise de ajuda, basta entrar em contato com a gente.</p>
                     </div>
@@ -253,11 +253,11 @@
             <h3>Serviços adicionais</h3>
             <div class="card-container">
                 <div class="card-services">
-                    <h5><img src="./pages/css/icones/bot.svg" alt="imagem  de um robo"><span id="service-text">Crição de bots</span></h5>
+                    <h5><img src="./src/icons/bot.svg" alt="imagem  de um robo"><span id="service-text">Crição de bots</span></h5>
                     <p>Transforme a comunicação da sua empresa com bots personalizados para WhatsApp e Telegram! Na nossa equipe, desenvolvemos soluções sob medida para automatizar interações, agilizar atendimentos e proporcionar uma experiência excepcional aos seus clientes. Entre em contato conosco hoje mesmo e leve a eficiência da automação para o próximo nível!</p>
                 </div>
                 <div class="card-services">
-                    <h5><img src="./pages/css/icones/ideias.svg" alt="imagem  de um robo"><span id="service-text">Transforme sua Ideia em Realidade Digital!</span></h5>
+                    <h5><img src="./src/icons/ideias.svg" alt="imagem  de um robo"><span id="service-text">Transforme sua Ideia em Realidade Digital!</span></h5>
                     <p>Da concepção à implementação, estamos aqui para tornar seu projeto uma realidade digital de sucesso! Nossa equipe especializada oferece serviços abrangentes de desenvolvimento, incluindo criação de sites, aplicativos móveis, APIs robustas e muito mais. Seja qual for a sua visão, estamos prontos para transformá-la em uma experiência digital excepcional. Entre em contato conosco agora e leve seu projeto para o próximo nível!</p>
                 </div>
             </div>
@@ -273,22 +273,6 @@
                 <a href="#">CONTATO</a></div>
          </section>
    </main>
-
 </body>
-<script>
-
-    $(document).ready(function() {
-        Load_Data();
-    });
-    
-    $(".active-menu").on("click", Click_Active_Menu);
-    $("#click-view-services").on("click", () => {
-        const view_services = document.querySelector(".add-services-a")
-        view_services.style.display = "flex"
-    });
-    $("#back").on("click", () => {
-        const view_services = document.querySelector(".add-services-a")
-        view_services.style.display = "none"
-    });
-</script>
+<script src="./src/js/events.js" type="module"></script>
 </html>
