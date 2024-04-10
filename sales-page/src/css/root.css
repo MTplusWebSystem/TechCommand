@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h6{
+    color: #515151;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+h3{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    width: 85%;
+}
+h2{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+}
+p{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+
+#container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#container-grid > #nav-bar {
+    height: 50px;
+    background-color: #656565;
+}
+
+#container-grid > #main {
+    display: grid;
+    grid-template-columns: [start] 1fr [end];
+    grid-template-rows: repeat(10);
+}
+
+#main > .grids-main {
+    height: 100vh;
+    background-color: rgb(0, 255, 76);
+}
+
+#main > .grids-main:nth-child(4) {
+    background-color:#cafffc;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > .grids-main:nth-child(5) {
+    background-color: #cafffc;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > .grids-main:nth-child(6) {
+    background-color: #cafffc;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização da aprentação START */
+#main > #presentation{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+#main > #presentation > .presentation-title {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#main > #presentation > .presentation-title > h2:nth-child(2){
+    color: #0084ff;
+}
+#main > #presentation > .presentation-illustration{
+    height: 35%;
+    width: 100%;
+    display: flex;
+}
+#main > #presentation > .presentation-illustration > img{
+    height: 100%;
+    width: 100%;
+}
+#main > #presentation > .presentation-text-view-options{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Cousine", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+#main > #presentation > .presentation-text-view-options > p{
+    margin-left: 5%;
+    text-align: center;
+}
+#main > #presentation > .presentation-text-view-options > .presentation-links{
+    height: 45px;
+    width: 95%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+}
+#main > #presentation > .presentation-text-view-options > .presentation-links > a{
+    height: 35px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+#main > #presentation > .presentation-text-view-options > .presentation-links > a:nth-child(1){
+    background-color: #0084ff;
+}
+#main > #presentation > .presentation-text-view-options > .presentation-links > a:nth-child(2){
+    background-color: #febc2c;
+}
+/* Estilização da aprentação END */
+
+
+/* Estilização sobre o revenda START */
+#main > #resale{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #resale > a{
+    height: 40px;
+    width: 60%;
+    color: #ffffff;
+    background-color: #fd413c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* Estilização da aprentação END */
+
+
+/* Estilização do texto sobre o app START */
+#main > #app-description{
+    height: 130vh;
+    display: flex;
+    width: 100%;
+    background-color: #082b75;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #app-description > h6,
+#main > #app-description > h2{
+    color: #ffffff;
+}
+/* Estilização do texto sobre o app END */
+
+
+/* Estilização do planos START */
+#main > .grids-main > .card-plan{
+    background-color: #ffffff;
+    height: 95%;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 9px;
+}
+#main > .grids-main > .card-plan > .display-value{
+    height: 35%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#main > .grids-main > .card-plan > .display-value > h2{
+    color: #01ff91 ;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+#main > .grids-main > .card-plan > .display-value > h4{
+    width: 80%;
+    text-align: center;
+    font-family: "Cousine", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+#main > .grids-main > .card-plan > .display-value > .view-value{
+    position: relative;
+    height: 35%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#main > .grids-main > .card-plan > .display-value > .view-value > #coin{
+    position: absolute;
+    top:0px;
+    left: 10px;
+}
+#main > .grids-main > .card-plan > .display-value > .view-value > #value{
+    position: absolute;
+    font-size: 25px;
+    top: 20%;
+    left: 25%;
+}
+#main > .grids-main > .card-plan > .display-value > .view-value > #duration{
+    position: absolute;
+    width: 60%;
+    top: 60%;
+    left: 60%;
+    font-size: 15px;
+}
+#main > .grids-main > .card-plan > .display-information{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#main > .grids-main > .card-plan > .display-information > ul{
+    height: 65%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Cousine", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    list-style: none;
+}
+#main > .grids-main > .card-plan > .display-information > a{
+    height: 35px;
+    width: 70%;
+    color: #ffffff;
+    background-color: #1fc47c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    border-radius: 9px;
+}
+#main > .grids-main > #plan2{
+    z-index: 45;
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+}
+/* Estilização do planos END */
+
+
+/* Estilização do ssh START */
+#main > #ssh-description{
+    height:210vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+#main > #ssh-description > #illustration-2{
+    width: 100%;
+}
+#main > #ssh-description >p{
+    margin-top: 15%;
+    width: 95%;
+}
+/* Estilização do ssh END */
+
+
+/* Estilização dos tipos de tecnologias START */
+#main > #ssh-technologies {
+    height: 290vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+#main > #ssh-technologies > .types-description-ssh {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #ssh-technologies > .types-description-ssh > p{
+    margin-top: 20px;
+    width:95%;
+}
+#main > #ssh-technologies > .types-description-ssh > .types-ssh {
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #ssh-technologies > .types-description-ssh > .types-ssh > h4 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#main > #ssh-technologies > .types-description-ssh > .types-ssh > img{
+    height: 45px;
+    width: 45px;
+}
+/* Estilização dos tipos de tecnologias END */
+
+
+/* Estilização das vantagens  START*/
+#main > #advantages-service{
+    height: 410vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #advantages-service > h3{
+    font-size: 20px;
+}
+#main > #advantages-service >.items-column ,
+#main > #advantages-service >.items-column > .items-view {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main > #advantages-service >.items-column > .items-view > h4{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    height: 45px;
+    margin-top: 5px;
+    text-align: center;
+}
+#main > #advantages-service >.items-column > .items-view > p{
+    margin-top: 20px;
+}
+#main > #advantages-service > .items-column > .items-view > img{
+    height: 150px;
+    width: 150px;
+}
+/* Estilização das vantafes END*/
+
+
+/* Estilização de outro serviços  START*/
+#main > #other-services{
+    height: 260vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+#main > #other-services > .card-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main > #other-services > .card-services > h5{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+#main > #other-services > .card-services > p{
+    margin-top: 10px;
+}
+#main > #other-services > .card-services > h5 > img{
+    height: 128px;
+    width: 128px;
+}
+/* Estilização de outro serviços  END*/
+
+
+#container-grid > #footer {
+    height: 50px;
+    background-color: #656565;
+}

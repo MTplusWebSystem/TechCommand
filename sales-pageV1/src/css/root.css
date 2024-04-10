@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h6{
+    color: #515151;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+h3{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    width: 85%;
+}
+h2{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+}
+p{
+    color: #000000;
+    font-family: "Cousine", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+
+
+
