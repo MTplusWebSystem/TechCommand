@@ -39,7 +39,7 @@
         left: 65% !important;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px){
     #main{
         grid-template-columns: [start] repeat(6,1fr) [end] !important;
     }
@@ -79,10 +79,42 @@
         top: 10vh !important;
         left: 65% !important;
     }
+    #main > #advantages-service,
+    #main > #other-services{
+        position: relative !important;
+        flex-direction: row !important;
+    }
+    #main > #advantages-service{
+        height: 190vh !important;
+    }
+    #main > #other-services{
+        height: 100vh !important;
+    }
+    #main > #advantages-service >h6,
+    #main > #other-services > h6{
+        position: absolute !important;
+        top:0 !important;
+    }
+    #main > #advantages-service >h3,
+    #main > #other-services > h3{
+        position: absolute !important;
+        top:10% !important;
+    }
+    #main > .grids-main:nth-child(7){
+        grid-column: 4/7;
+    }
+    #main > .grids-main:nth-child(8){
+        height: 210vh !important;
+        grid-column: 1/4;
+        grid-row: 7/8;
+    }
+    #main > #presentation > .presentation-illustration{
+        height: 420px !important;
+        width: 420px !important;
+    }
 }
 @media (min-width:320px) and (max-width:768px){
     #main > #presentation > .presentation-illustration{
-        height:380px !important;
         width:380px !important;
     }
     #main > #presentation > .presentation-text-view-options > .presentation-links > a,
