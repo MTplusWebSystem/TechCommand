@@ -1,0 +1,291 @@
+@import url("./colors.css");
+
+@media (max-width: 280px) {
+    #about-resale,
+    #advantages-service,
+    #app-description,
+    #other-services,
+    #plan-list,
+    #presentation,
+    #ssh-description,
+    #footer {
+        height: 240% !important;
+        flex-direction: column !important;
+    }
+
+    #plan-list > .card-container > .card-main > .plans #cifrão {
+        top: 0px;
+        left: -25px;
+    }
+
+    #ssh-description,
+    #advantages-service {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #ssh-description > .types-description-ssh {
+        height: 35%;
+        width: 100% !important;
+    }
+
+    #advantages-service > .items-grup {
+        flex-direction: column !important;
+    }
+
+    #advantages-service > .items-grup > .items-column > .items-view {
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #login-desktop {
+        display: none !important;
+    }
+
+    #nav-bar > .menu-style > #menu-list {
+        display: none;
+        position: fixed;
+        top: 45px;
+        left: 0%;
+        height: 200px;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--color-dark212);
+    }
+
+    #nav-bar > #menu {
+        width: 40%;
+    }
+
+    #login-mobile {
+        width: calc(100% / 2);
+    }
+
+    #nav-bar > .menu-style > #menu-list > li {
+        width: 90%;
+    }
+
+    #nav-bar > .menu-style > #menu-list > li > a {
+        color: var(--color-whitefff);
+    }
+
+    .add-services-a > ul {
+        height: 85%;
+        left: calc((100% - 250px) / 2) !important;
+    }
+
+    #nav-bar > .logo {
+        width: 60%;
+    }
+
+    #nav-bar > .logo > h2 > #logo {
+        font-size: 20px;
+    }
+
+    #about-resale,#advantages-service,
+    #app-description,#other-services,
+    #plan-list,#presentation,#ssh-description,
+    #footer {
+        height: 170%;
+        flex-direction: column;
+        top: 10%;
+    }
+
+    #presentation > .presentation-card {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    #presentation > .presentation-card > .presentation-text > .presentation-button {
+        position: relative;
+        left: -5%;
+        width: 100% !important;
+    }
+
+    #presentation > .presentation-card > .presentation-title {
+        top: -10% !important;
+        width: 100%;
+    }
+
+    #presentation > img {
+        width: 80%;
+    }
+
+    #about-resale > .card-about-resale > a {
+        width: 70% !important;
+    }
+
+    #about-resale > .card-about-resale,
+    h6,
+    h3,
+    p {
+        width: 100% !important;
+    }
+
+    #app-description > .card-app-description,
+    h6,
+    h2 {
+        width: 100% !important;
+    }
+
+    #plan-list {
+        height: calc(100% * 3) !important;
+    }
+
+    #plan-list > .card-container > .card-main {
+        flex-direction: column !important;
+    }
+
+    #plan-list > .card-container > .card-main > .plans {
+        width: 95% !important;
+    }
+
+    #plan-list > .card-container > .card-main > .plans a {
+        width: 75% !important;
+    }
+
+    #advantages-service > .items-grup > .items-column {
+        width: 100% !important;
+    }
+
+    #ssh-description,#advantages-service {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #ssh-description > .types-description-ssh {
+        height: 35%;
+        width: 100% !important;
+    }
+
+    #advantages-service > .items-grup {
+        flex-direction: column !important;
+    }
+
+    #advantages-service > .items-grup > .items-column {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    #login-desktop {
+        display: none !important;
+    }
+
+    #nav-bar > .menu-style > #menu-list {
+        display: none;
+        position: fixed;
+        top: 45px;
+        left: 0%;
+        height: 200px;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--color-dark212);
+    }
+
+    #nav-bar > #menu {
+        width: 40%;
+    }
+
+    #login-mobile {
+        width: calc(100% / 2);
+    }
+
+    #nav-bar > .menu-style > #menu-list > li {
+        width: 90%;
+    }
+
+    #nav-bar > .menu-style > #menu-list > li > a {
+        color: var(--color-whitefff);
+    }
+
+    .add-services-a > ul {
+        height: 85%;
+        left: calc((100% - 250px) / 2) !important;
+    }
+
+    #nav-bar > .logo {
+        width: 60%;
+    }
+
+    #nav-bar > .logo > h2 > #logo {
+        font-size: 20px;
+    }
+
+    #about-resale,#advantages-service,#app-description,
+    #other-services,#plan-list,#presentation, #ssh-description,
+    #footer {
+        height: 170%;
+        flex-direction: column;
+        top: 10%;
+    }
+
+    #presentation > .presentation-card {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    #presentation > .presentation-card > .presentation-text {
+        width: 100%;
+    }
+
+    #presentation > .presentation-card > .presentation-title {
+        top: -50% !important;
+        width: 100%;
+    }
+
+    #presentation > img {
+        width: 80%;
+    }
+
+    #about-resale > .card-about-resale > a {
+        width: 70% !important;
+    }
+
+    #about-resale > .card-about-resale,
+    h6,h3,p {
+        width: 100% !important;
+    }
+
+    #app-description > .card-app-description,
+    h6,h2 {
+        width: 100% !important;
+    }
+
+    #plan-list > .card-container > .card-main > .plans a {
+        width: 75% !important;
+    }
+
+    #plan-list > .card-container > .card-main > .plans #cifrão {
+        top: 0px;
+        left: -25px;
+    }
+
+    #ssh-description,
+    #advantages-service {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #ssh-description > .types-description-ssh {
+        height: 35%;
+        width: 100% !important;
+    }
+
+    #advantages-service > .items-grup {
+        flex-direction: column !important;
+    }
+
+    #advantages-service > .items-grup > .items-column {
+        width: 100% !important;
+    }
+}

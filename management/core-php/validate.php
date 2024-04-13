@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     case 2:
                         echo "<script>window.location.href = 'http://localhost:7070/pages/manager.php';</script>";
                     case 3:
-                        echo "<script>window.location.href = 'http://localhost:7070/administrator.php';</script>";
+                        echo "<script>window.location.href = 'http://localhost:7070/administrator/';</script>";
                 }
             } else {
                 sendMSG("http://localhost:7070/index.html", "Usuário ou senha incorretos.");

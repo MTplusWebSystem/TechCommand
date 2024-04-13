@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechCommand</title>
-    <link rel="stylesheet" href="./pages/css/styles/index.css">
+    <link rel="stylesheet" href="./src/css/styles/index.css">
 </head>
 <body>
    <main class="container">
@@ -12,22 +12,23 @@
         <h4>É ótimo ter você por aqui! Vamos iniciar</h4>
         <h6>Opções</h6>
         <div class="options">
-            <button><img src="./pages/css/imgs/icons/attendant.svg" alt="icone de atendente">Atendente</button>
-            <button><img src="./pages/css/imgs/icons/client.svg" alt="icone de client">Cliente</button>
-            <button><img src="./pages/css/imgs/icons/administrator.svg" alt="icone de Administrador">Administrador</button>
-            <button id="click-gerente"><img src="./pages/css/imgs/icons/manager.svg" alt="">Gerente</button>
+            <button><img src="./src/css/imgs/icons/attendant.svg" alt="icone de atendente">Atendente</button>
+            <button id="administrador"><img src="./src/css/imgs/icons/administrator.svg" alt="icone de Administrador">Administrador</button>
+            <button id="gerente"><img src="./src/css/imgs/icons/manager.svg" alt="icone de gerente">Gerente</button>
         </div>
     </section>
     <section class="forms">
+        <a id="return" href="#"><img src="./src/css/imgs/icons/arrow.svg" alt="icone de retorno"></a>
         <div class="form-manager">
             <form action="./core-php/validate.php" method="post">
+                
                 <div class="recive-data">
                     <p>Usuário</p>
-                    <input type="text">
+                    <input name="username" type="text">
                 </div>
                 <div class="recive-data">
                     <p>Senha</p>
-                    <input type="password">
+                    <input name="password" type="password">
                 </div>
                 <button>Acessar</button>
                 <a href="#">recuperar senha</a>
@@ -37,13 +38,17 @@
    </main>
 </body>
 <script>
-    const click_gerente = document.querySelector("#click-gerente")
-    const view_options  = document.querySelector(".access-options")
-    const view_forms    = document.querySelector(".forms")
-
-    click_gerente.addEventListener("click",()=>{
-        view_options.style.left = "-100%"
-        view_forms.style.left = "0%"
-    })
+    const click_administrador = document.querySelector("#administrador");
+    const disable_options = document.querySelector(".access-options")
+    const view_forms = document.querySelector(".forms")
+    const return_options = document.querySelector("#return")
+    click_administrador.addEventListener("click", () => {
+        disable_options.style.display = "none"
+        view_forms.style.display = "flex"
+    });
+    return_options.addEventListener("click", () => {
+        disable_options.style.display = "flex"
+        view_forms.style.display = "none"
+    });
 </script>
 </html>
