@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #121212;
+}
+h1{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    color: #21c35d;
+}
+h4{
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 90%;
+    text-align: center;
+}
+.card-error{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    color: #121212;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+}
+.card-error > button{
+    height: 35px;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #21c35d;
+}
