@@ -274,5 +274,5 @@
          </section>
    </main>
 </body>
-<script src="./assets/js/events.js" type="module"></script>
+
 </html>

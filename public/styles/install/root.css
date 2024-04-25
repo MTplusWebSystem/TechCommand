@@ -10,17 +10,28 @@ body{
     position: relative;
     background-color: #12121a;
     overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows: repeat(3, 55%);
+    grid-template-rows: repeat(2, 55%);
     gap: 7%;   
     position: relative;
     padding: 5% 0% 5% 0%;
     justify-items: center;
+}
+@media (min-width:420px) {
+    .wrapper{
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns:60%;
+        grid-template-rows: repeat(2, 95%);
+    }
 }
 .j-center{
     display: flex;
@@ -45,7 +56,33 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-
+.grup{
+    height: 40px;
+    width: 95%;
+}
+.grup > img{
+    height: 35px;
+    width: 35px;
+}
+.grup > input{
+    height: 30px;
+    width: calc(100% - 60px);
+    border: none;
+    border-radius: 12px;
+    background-color: #16161e;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+.view-db > button,
+.config-page > button{
+    height: 35px;
+    width: 65%;
+    background-color: #1239bc;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+}
 .f-400{
     font-family: "Arvo", serif;
     font-weight: 400;
@@ -92,15 +129,24 @@ body{
     border:none;
     border-radius: 12px;
 }
+.view-db,
+.config-page,
 .block-view{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
     border-radius: 12px;
 }
+.block-view{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
 .block-view > img{
     height: 120px;
     width: 120px;
+}
+.view-db,.config-page{
+    background-color: #2b2b35;
+    display: none;
 }
