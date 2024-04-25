@@ -11,7 +11,7 @@
         <div class="logo"><h2><strong id="logo">TechCommand</strong></h2></div>
         <div id="menu" class="menu-style">
             <div id="login-mobile">
-                <a href="http://localhost:7070/client">Entrar</a>
+                <a href="/login/client">Entrar</a>
             </div>
             <button id="view-menu">
                 <div id="bar1" class="stylebar"></div>

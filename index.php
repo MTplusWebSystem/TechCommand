@@ -10,9 +10,11 @@ class Requests{
         if($page){
             $file = $path[0].".php";
             if(file_exists($file)){
+                
                 require_once($file);
             } else {
                 http_response_code(404);
+                echo $file;
                 require_once("./public/pages/404.php");
                 return;
             }
@@ -43,14 +45,22 @@ if($requestMethod =="GET"){
     $css =  "./public/styles/";
     $js =  "./public/js/";
     $assets =  "./public/assets/";
+    $imgs =  "./public/assets/imgs/";
 
     if (substr($uri, 0, 5) == "/css/") {
         $request->RequestEntry($uri, [$css, 5,"css", "text/css"], false);  
     } elseif (substr($uri, 0, 4) == "/js/") {
         $request->RequestEntry($uri, [$js, 4,"js", "application/javascript"], false);  
-    } elseif (substr($uri, 0, 8) == "/assets/" ) {
-        $request->RequestEntry($uri, [$assets, 8, "svg","image/svg"], false);  
-    } else {
+    } elseif (substr($uri, 0, 13) == "/assets/imgs/" ) {
+        if(file_exists($imgs.substr($uri,13).".jpg")){
+            $request->RequestEntry($uri, [$imgs, 13, "jpg","image/jpg"], false);
+            echo "dentro";
+        }else{
+            $request->RequestEntry($uri, [$imgs, 13, "png","image/png"], false);
+        }
+    }elseif (substr($uri, 0, 8) == "/assets/" ) {
+        $request->RequestEntry($uri, [$assets, 8, "svg","image/svg"], false);
+    }else {
         if(!file_exists("./database/ConnectionDB.conf")){
             require_once("./public/pages/install.php");
             return;
