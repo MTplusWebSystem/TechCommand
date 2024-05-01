@@ -1,4 +1,4 @@
-@import url("/colors");
+@import url("/css/index/colors");
 
 @media (max-width: 280px) {
     #about-resale,

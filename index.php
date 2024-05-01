@@ -56,14 +56,14 @@ class StaticFile implements routerInterface
 {
     public function router($uri){
         global $routers;
-        $file = $routers[$uri];
+        if(substr($uri, 0, 4) == "/js/" ||substr($uri, 0, 5) == "/css/" ||substr($uri, 0, 8) == "/assets/"  ){
 
-        if(file_exists($file)){
-            require_once($file);
-            return;
-        }else{
             $assets = new AssetsFile;
             $assets -> router($uri);
+        }else{
+            $file = $routers[$uri];
+            require_once($file);
+            return;
         }
     }
 }

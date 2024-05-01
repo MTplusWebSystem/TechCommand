@@ -1,8 +1,8 @@
-@import url("./mobile-phone-query");
-@import url("./desktop-query");
-@import url("./container");
-@import url("./colors");
-@import url("./nav-bar");
+@import url("/css/index/mobile-phone-query");
+@import url("/css/index/desktop-query");
+@import url("/css/index/container");
+@import url("/css/index/colors");
+@import url("/css/index/nav-bar");
 *{
     padding: 0;
     margin: 0;
