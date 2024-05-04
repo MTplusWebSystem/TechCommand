@@ -1,0 +1,60 @@
+@import url("/css/index/colors");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+nav > .mobileStyle {
+    height: 100%;
+    width: 100vw;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-whitefff);
+}
+a{
+    text-decoration: none;
+}
+.family-anton{
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav > .mobileStyle > h2 {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5%;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+nav > .mobileStyle > #list-view {
+    display: flex;
+    height: 100%;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-view > ul {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#list-view > ul > li> a{
+    color: var(--color-list-view);
+}
+#list-view > a.client-loginStyle {
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    background-color: var(--color-whitefff);
+    border-color: var(--color-dark000);
+    border-radius: 12px;
+}

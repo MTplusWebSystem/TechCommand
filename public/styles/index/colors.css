@@ -1,6 +1,7 @@
 :root{
     --color-whitefff:#ffffff;
     --color-dark000:#000000;
+    --color-list-view:#000000;
     --color-dark212:#121212;
     --color-graye6e:#6e6e6e;
     --color-gray525:#525252;
@@ -10,4 +11,9 @@
     --color-green47c:#1fc47c;
     --color-red13c:#FD413C;
     --color-yellowc2c:#FEBC2C;
+    --color-title1:#000000;
+    --color-title2:#0084ff;
+    --color-buttonPremium:#0084ff;
+    --color-buttonFree:#FEBC2C;
+    --color-textButton:#ffffff;
 }

@@ -1,1 +1,4 @@
-{"username":"Master","password":"Master","title":"TechCommand"}
+{"username":"Master","password":"Master","logo":"Tech Command","button":"Acessar","title":[
+    "Seu painel open-source",
+    "para gerencia SSH"
+]}
